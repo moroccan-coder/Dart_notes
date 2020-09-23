@@ -86,10 +86,17 @@ var students = {
 };
 
 var student1 = students['student1'];
-print(student1);
+//print(student1);
 
 var studentName = student1['name'];
-print(studentName);
+//print(studentName);
+
+// --------------> Spread Operator ...
+
+var capitals = {'Morocco':'Rabat', 'Algeria':'Algiers', 'Uk':'London'};
+var capitals2 = {...capitals,'Usa':'Washington'};
+
+print(capitals2);
 
 
 
