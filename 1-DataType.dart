@@ -1,5 +1,9 @@
 void main() {
 
+//########################################### String Buffer ####################################################
+  /*If you're using Dart and you need to perform incremental building of a string, there is a better way instead of concatenating a string with another string multiple times.
+  You can use StringBuffer, a class for concatenating strings efficiently. The content will be stored in a buffer first before converted to a string.*/
+
 var sb = new StringBuffer();
 sb.write('html ');
 sb.writeAll(['Python','Java','Dart'],' ');
@@ -96,8 +100,48 @@ var studentName = student1['name'];
 var capitals = {'Morocco':'Rabat', 'Algeria':'Algiers', 'Uk':'London'};
 var capitals2 = {...capitals,'Usa':'Washington'};
 
-print(capitals2);
+//print(capitals2);
 
+
+
+
+
+//########################################### Runes ###########################################################
+/* the runes (Integer Unicode code points) of a String.
+Unicode defines a unique numeric value for each letter, digit, 
+and symbol used in all of the worlds wiriting systems */
+
+var nam = "yassine el haitar";
+//print(nam.codeUnits);
+//print(nam.codeUnitAt(0));
+
+// EX1 : loop into String
+for (var c in nam.runes)
+{
+//print(String.fromCharCode(c));
+
+}
+
+
+// EX2 : emoji Unicode
+
+var emoji1 = "\u{1F60D}";
+//print(emoji1);
+
+
+
+
+
+//########################################### Enumeration ###########################################################
+/* an Enumeration is a set of predefined named values, called as memebers.
+   Enumeration are fuseful when we want deal with limited set of value for variable.
+   For example ( Days of the week ) */
+
+
+var mon = DaysOfTheWeek.Mon; // Called predefined enum inside our Class
+print(mon);
+
+DaysOfTheWeek.values.forEach((val) => print('value: $val \nIndex: ${val.index} \n\n'));
 
 
 
@@ -117,3 +161,5 @@ print(capitals2);
 
 
 }
+
+enum DaysOfTheWeek {Mon, Tue, Wed, Thu, Friday, Sat, Sun}
