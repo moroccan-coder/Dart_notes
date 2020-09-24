@@ -6,8 +6,17 @@ void main(){
 //-----> call function with optional Parameter
    //hello('ahmed');
 
+
+
+
+
+
 //-----> named Parameter function calling
    //hii(ishere : true,msg:"hi, good morning");
+
+
+
+
 
 
 //----> Call function with default Parameters
@@ -16,14 +25,35 @@ void main(){
   //ceckPresence();
 
 
+
+
+
 // ------> Passe Function to Other Function
    //var skills = ['JS','Python','Dart','Java'];
    //skills.forEach(printElement); // printElement is a functions
+
+
+
+
 
 // ------> Assign a function to variable  
   //var myfunc = myPrint; // myPrint is a function
   //myPrint(30);
 
+
+
+
+
+// -------> Anonymous function (without function name and Parameter names)
+var skills = ['JAVA','Python','Dart','JavaScript'];
+
+   /* skills.forEach((element){
+    print('Your Skill is : $element');
+    });
+    */
+
+   //Shorthand function (if we have one line of code inside our function prefere to use Shorthand function)
+   skills.forEach((element)=>print('Your Skill is : $element'));
 }
 
 //Function declaration
