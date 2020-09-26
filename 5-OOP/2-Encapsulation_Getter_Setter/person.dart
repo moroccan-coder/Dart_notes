@@ -7,7 +7,7 @@ class data
 class state
 */
 
-String name;
+String _name;
 int _age;
 
 // We have differents names of Methods inside class :
