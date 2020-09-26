@@ -4,10 +4,14 @@ import 'toyota.dart';
 void main()
 
 {
-  Mercedes merc1 = new Mercedes();
+
+
+  //using inheritence constructer
+  //Mercedes merc1 = new Mercedes('merciiis');
+
 
   // Mercedes
-  
+  Mercedes merc1 = new Mercedes();
   merc1.name = 'Mercedes';
   merc1.speed = 360;
   print(merc1.showInfo());
