@@ -16,4 +16,10 @@ String showInfo()
 }
 
 
+
+
+// inhertence with constructor
+//Toyota(String nm) : super(nm){}
+
+
 }
